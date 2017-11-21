@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>HDMI Matrix Config</title>
+    <script src="HDMIMatrixConfig.js"></script>
+  </head>
+  <body>
+    <a href="index.html">Back</a>
+    <h1>Configuration</h1>
+    <table>
+      <thead>
+        <th>Type</th>
+        <th>Port</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Action</th>
+      </thead>
+      <tbody id="items"></tbody>
+      <tfoot>
+        <tr>
+          <td>
+            <select id="type">
+              <option value="inputs">Input</option>
+              <option value="outputs">Output</option>
+            </select>
+          </td>
+          <td><input type="number" id="port" size="2"/></td>
+          <td><input type="text" id="name"/></td>
+          <td><input type="text" id="image"/></td>
+          <td><button onclick="create()">Add</button></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
